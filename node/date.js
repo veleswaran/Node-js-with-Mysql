@@ -1,0 +1,14 @@
+const date=new Date();
+const now= new Date(1000);
+console.log(date.getFullYear('02-2-1996'));
+console.log(now);
+console.log(date.getTime());
+console.log(date.getMonth());
+console.log(date.getDay());
+console.log(date.getDate());
+console.log(date.getMinutes());
+date.setMonth(4);
+date.setDate(26);
+date.setFullYear(1996);
+date.setHours(8);
+console.log(date);
