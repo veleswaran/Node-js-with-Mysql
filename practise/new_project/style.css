@@ -1,0 +1,13 @@
+#bodycontent{
+    width: 60%;
+    border: 1px solid black;
+    background-color: lightgreen;
+    color: blue;
+    margin-left: 20%;
+   word-wrap: normal;
+}
+#style{
+    margin-left: 15%;
+    /* font-size: 30px; */
+
+}

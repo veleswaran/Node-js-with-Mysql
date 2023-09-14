@@ -1,0 +1,24 @@
+{
+    "question":[
+        {
+            "id":1,
+            "Ques":"what is JRE"
+        },
+        {
+            "id":2,
+            "Ques":"veleswaran"
+        },
+        {
+            "id":3,
+            "Ques":"savitha devi"
+        },
+        {
+            "id":4,
+            "Ques":"monisa"
+        },
+        {
+            "id":5,
+            "Ques":"savitha mayan"
+        }
+    ]
+}

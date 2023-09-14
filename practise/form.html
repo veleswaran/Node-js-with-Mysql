@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form"action="">
+        <label for="name">Name</label>
+        <input id="name" type="text"><br><br>
+        <label for="phone">PhoneNumber</label>
+        <input id="phone" type="tel"  ><br><br>
+        <label for="email">Email</label>
+        <input id="email" type="email"><br><br>
+        <label for="date">Date</label>
+        <input id="date" type="date"><br><br>     
+        <input type="submit">
+    </form>
+    <div id="vel">
+
+    </div>
+    <script>
+        let ans=document.getElementById('form',addEventListener('submit',(event)=>{
+            event.preventDefault();
+            let value=document.getElementById('name').value;
+            let value1=document.getElementById('phone').value;
+            let value2=document.getElementById('email').value;
+            let value3=document.getElementById('date').value;
+     
+
+        document.getElementById('vel').innerHTML+=value+"    "+value1+"     "+value2+"     "+value3+"<br>";
+        }))
+    </script>
+</body>
+</html>

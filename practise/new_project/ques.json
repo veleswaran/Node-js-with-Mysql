@@ -1,0 +1,50 @@
+{
+    "questions":[
+        {
+            "id":1,
+            "ques":"What are datatypes in java",
+            "op1":"primitive,nonprimitive",
+            "op2":"number,char",
+            "op3":"both 1 and 2",
+            "op4":"None of this",
+            "ans":"op1"
+        },
+        {
+            "id":2,
+            "ques":"Write the type of Oparators",
+            "op1":"arithmetic,assignment,logical",
+            "op2":"unary,binary,ternary",
+            "op3":"both of 1 and 2",
+            "op4":"None of this",
+            "ans":"op2"
+        },
+        {
+            "id":3,
+            "ques":"short list of binary Oparators",
+            "op1":"arithmetic,assignment,logical,bitwise,relational",
+            "op2":"arithmetic,assignment,logical,bitwise,unary",
+            "op3":"arithmetic,assignment,unary,ternary",
+            "op4":"None of this",
+            "ans":"op1"
+        },
+        {
+            "id":4,
+            "ques":"Write the syntex of ternary Oparators",
+            "op1":"(condition)?'statement1':'statement2'",
+            "op2":"variable=(condition)?'statement1':'statement2'",
+            "op3":"both 1 and 2",
+            "op4":"None of this",
+            "ans":"op2"
+        },
+        {
+            "id":5,
+            "ques":"List out the Type of Loops",
+            "op1":"for,while,do-while,foreach",
+            "op2":"foreach,for in,for of,while",
+            "op3":"both 1 and 2",
+            "op4":"None of this",
+            "ans":"op1" 
+        }
+     
+    ]
+}

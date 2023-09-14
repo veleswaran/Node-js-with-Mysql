@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #action{
+            width: 60%;
+            background-color: rgb(203, 203, 216);
+            align-items: center;
+        }
+        table,th,td{
+            border: 1px solid black;
+        }
+        .form,table{
+            width: 35%;
+            background-color: aqua;
+            margin-left: 30%;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form id="vel" method="post" action="hello.html">
+            <label for="action">List of does</label><br><br>
+            <input id="action" name="name" type="text" ><br><br>
+            <input type="submit">
+        </form>
+    </div>
+    <div class="table">
+        <table id="join">
+            <tr>
+                <th>Does in day</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    <ul id="v">
+        <li></li>
+    </ul>
+    <script>
+        // const ac=document.getElementById('vel').addEventListener('submit',(event)=>{
+        //     // event.preventDefault();
+        //     let valaction=document.getElementById('action').value;
+        //     let table=document.getElementById('join');
+        //     let row=table.insertRow(-1);
+        //     let col=row.insertCell(0);
+        //     col.innerHTML=valaction;
+        //     let col1=row.insertCell(1);
+        //     let button = document.createElement('button');
+        //     button.textContent = 'Delete';
+        //     button.addEventListener('click',() => {
+        //         table.deleteRow(row.rowIndex);
+        //     })
+        //     col1.appendChild(button);
+        
+        //     document.getElementById('vel').reset();
+        // })
+    </script>
+</body>
+</html>
