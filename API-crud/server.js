@@ -1,20 +1,28 @@
 const http = require ('http');
+const getReq = require("./methods/get-request");
+const postReq = require("./methods/get-request");
+const putReq = require("./methods/get-request");
+const deleteReq = require("./methods/get-request");
+const movies = require("./data/movie.json");
+
 
 const PORT = process.env.PORT||5000;
 
+
 const server = http.createServer((req,res)=>{
+    res.movies= movies;
     switch(req.method){
         case "GET":
             getReq(req,res);
             break;
-        case "GET":
-            getReq(req,res);
+        case "POST":
+            postReq(req,res);
             break;
-        case "GET":
-            getReq(req,res);
+        case "PUT":
+            putReq(req,res);
             break;
-        case "GET":
-            getReq(req,res);
+        case "DELETE":
+            deleteReq(req,res);
             break;
         default:
             res.statusCode=400;
