@@ -1,16 +1,17 @@
 module.exports = (req, res) => {
     let baseUrl = req.url.substring(0, req.url.lastIndexOf("/") + 1);
-    console.log(baseUrl);
+  
     let id = req.url.split("/")[3];
-    console.log(id);
+
     const regexV4 = new RegExp(/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/i);
 
     if (req.url === "/app/movie") {
         res.statusCode = 200;
         res.setHeader("Content-Type", "application/json");
-        res.write(JSON.stringify(res.movies));
+        res.write(JSON.stringify(req.movies));
         res.end();
-    } else if (!regexV4.test(id)) {
+    } 
+    else if (!regexV4.test(id)) {
         res.writeHead(400, { "Content-Type": "application/json" });
         res.end(
             JSON.stringify({
@@ -18,11 +19,11 @@ module.exports = (req, res) => {
                 message: "UUID is not valid"
             })
         );
-    } else {
+    } 
+    else if(regexV4.test(id) && baseUrl==="/app/movie/"){
         let filteredMovie = req.movies.filter((movie) => {
             return movie.id === id;
         });
-
         if (filteredMovie.length > 0) {
             res.statusCode = 200;
             res.setHeader("Content-Type", "application/json");

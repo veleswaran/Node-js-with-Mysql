@@ -1,6 +1,7 @@
 const http = require ('http');
+
 const getReq = require("./methods/get-request");
-const postReq = require("./methods/get-request");
+const postReq = require("./methods/post-request");
 const putReq = require("./methods/get-request");
 const deleteReq = require("./methods/get-request");
 const movies = require("./data/movie.json");
@@ -10,7 +11,7 @@ const PORT = process.env.PORT||5000;
 
 
 const server = http.createServer((req,res)=>{
-    res.movies= movies;
+    req.movies= movies;
     switch(req.method){
         case "GET":
             getReq(req,res);
