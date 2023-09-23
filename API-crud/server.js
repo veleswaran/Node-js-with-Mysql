@@ -2,8 +2,8 @@ const http = require ('http');
 
 const getReq = require("./methods/get-request");
 const postReq = require("./methods/post-request");
-const putReq = require("./methods/get-request");
-const deleteReq = require("./methods/get-request");
+const putReq = require("./methods/put-request");
+const deleteReq = require("./methods/delete-request");
 const movies = require("./data/movie.json");
 
 
